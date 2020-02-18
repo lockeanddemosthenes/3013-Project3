@@ -201,6 +201,13 @@ int main(int argc, char const *argv[]) {
 
 void theWateringBowl(){
 	//TODO make conditional statements and locks to ensure the kitchen is agreeable
+	//make lock that allows 1-4 threads that fit a certain parameter
+
+	/**
+	* four locks within switch statement testing for which species is inside lock
+	* something to "kick out" the animal from the kitchen after they are done drinking
+	* if any locks are occupied, it can use trylock
+	**/
 
 	// Critical section starts
 	pthread_mutex_lock(&mutex);
